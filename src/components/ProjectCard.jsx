@@ -9,7 +9,7 @@ const ProjectCard = ({ project, setAciveProjectId, index }) => {
   }
   return (
     <motion.div
-      className="2xl:h-[400px] xl:h-[320px] xl:aspect-[3/4] md:min-h-[200px] min-h-[120px]  aspect-[2/3]  bg-white/20 rounded-2xl place-self-center xl:p-2 p-1 cursor-pointer hover:skew-y-3  shadow-2xl shadow-black/75 relative overflow-hidden group"
+      className="2xl:h-[400px] xl:h-[320px] xl:aspect-[3/4] md:min-h-[200px] min-h-[120px] aspect-[2/3]  bg-white/20 rounded-2xl place-self-center xl:p-2 p-1 cursor-pointer overflow-hidden  shadow-2xl  shadow-black/75 relative group"
       variants={cardsVariants}
       initial={cardsVariants.initial}
       whileInView={cardsVariants.animate}
@@ -18,7 +18,7 @@ const ProjectCard = ({ project, setAciveProjectId, index }) => {
       onClick={() => handleClickCard()}
     >
       <img
-        className="w-full h-full object-cover rounded-2xl saturate-[15%] group-hover:saturate-100 transition-all"
+        className="w-full h-full object-cover rounded-2xl saturate-[15%]  group-hover:saturate-100 transition-all"
         src={project.websiteImage}
         alt={project.projectName}
       />

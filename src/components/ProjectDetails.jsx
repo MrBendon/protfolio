@@ -1,6 +1,6 @@
 const ProjectDetails = ({ project }) => {
   return (
-    <div className="w-full xl:w-4/5 h-full mx-auto flex flex-wrap xl:gap-4 gap-1 py-4 px-8 bg-white/10 overflow-y-auto my-scrollbar rounded-2xl">
+    <div className="w-full xl:w-4/5 h-full mx-auto flex flex-wrap xl:gap-4 gap-1 py-4 px-2 bg-white/10 overflow-y-auto my-scrollbar rounded-2xl">
       <div className="w-full xl:h-[380px] sm:h-[280px] h-[160px]  bg-black rounded-2xl overflow-hidden ">
         <img
           className="w-full h-full object-cover"

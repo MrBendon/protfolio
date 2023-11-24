@@ -23,7 +23,7 @@ const SectionOne = () => {
             </p>
           </div>
         </div>
-        <div className="mx-auto w-4/5 lg:h-[800px] h-[500px] ">{<ComputerCanvas></ComputerCanvas>}</div>
+        <div className="mx-auto w-4/5 lg:h-[800px] h-[500px]">{<ComputerCanvas></ComputerCanvas>}</div>
         <div className="absolute bottom-4 left-[50%] translate-x-[-50%] cursor-pointer">
           <Mouse></Mouse>
         </div>
