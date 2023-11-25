@@ -89,13 +89,13 @@ const Contact = () => {
         <div className="titleText ">
           與我聯繫 <span className="text-[#18C3CC]">Contact</span>
         </div>
-        <p className="md:text-2xl text-lg text-white">
+        <p className="md:text-xl text-lg text-white">
           這裡算是我其中的一個練習作品之一，主要是想要練習一些動畫與效果，未來也有可能會把作品統一放在同一個地方．
         </p>
       </div>
 
       <div className="w-full h-[80%] flex p-8 md:flex-row flex-col md:gap-0 gap-8">
-        <form className="md:w-[60%] w-full md:h-full h-max flex flex-col justify-center md:gap-16 gap-8 2xl:text-3xl xl:text-2xl text-xl">
+        <form className="md:w-[60%] w-full md:h-full h-max flex flex-col justify-center md:gap-16 gap-8 2xl:text-2xl xl:text-xl text-md">
           <div className="md:w-[70%] w-full md:h-24 h-16 flex justify-start items-center mx-auto relative ">
             <input
               type="text"
@@ -169,7 +169,7 @@ const Contact = () => {
           <div className="md:w-[70%] w-full mx-auto flex justify-end">
             <button
               type="submit"
-              className="md:w-40 w-32 h-max rounded-xl md:py-4 py-2 px-8 text-white border-2 border-white 2xl:text-2xl xl:text-xl text-lg relative transition-all group z-10 hover:border-[#18C3CC] overflow-hidden"
+              className="md:w-40 w-32 h-max rounded-xl md:py-4 py-2 px-8 text-white border-2 border-white 2xl:text-2xl xl:text-xl text-md relative transition-all group z-10 hover:border-[#18C3CC] overflow-hidden"
               onClick={handleSubmit}
             >
               <span className="absolute top-0 left-0 w-0 h-full group-hover:w-full  bg-[#18C3CC] transition-all -z-[1]"></span>

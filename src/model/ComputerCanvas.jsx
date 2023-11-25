@@ -47,8 +47,8 @@ const ComputerCanvas = () => {
           onClick={() => ChangeCameraPosition()}
           object={PCmodel.scene}
           ref={ObjectRef}
-          position={isMobile ? [0.8, 3, 0] : [0.8, 0, 0]}
-          scale={isMobile ? 0.4 : 0.7}
+          position={isMobile ? [0.8, 3, 0] : [0.8, 2, 0]}
+          scale={isMobile ? 0.4 : 0.6}
           rotation={[0, -1.6, 0]}
         ></primitive>
         {/* </mesh> */}

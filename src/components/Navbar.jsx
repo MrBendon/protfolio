@@ -15,7 +15,7 @@ const StyleLi = ({ item }) => {
       href={`#${item.id}`}
       className={`h-full flex items-center relative text-white after:w-0 after:absolute after:bottom-0 after:right-0 after:border-b-4 after:border-white hover:after:w-full hover:after:left-0 after:transition-all after:duration-500  after:ease-in-out`}
     >
-      <li className="h-full flex items-center px-8 transition-all ">{item.title}</li>
+      <li className="h-full flex items-center px-4 transition-all ">{item.title}</li>
     </a>
   );
 };
@@ -34,13 +34,13 @@ const MobileLi = ({ item, isOpenNav, index }) => {
       variants={MobileLiVariants}
       initial={MobileLiVariants.hidden}
       animate={isOpenNav ? MobileLiVariants.show : ""}
-      transition={{ delay: index * 0.5, duration: 0.5 }}
+      transition={{ delay: index * 0.15, duration: 0.5 }}
       href={`#${item.id}`}
       className={`flex items-center relative ${
-        isOpenNav ? "h-20 rounded-t-xl hover:bg-slate-200 font-black" : "h-20 text-white"
+        isOpenNav ? "h-16 rounded-t-xl hover:bg-slate-200 font-black" : "h-16 text-white"
       }  after:w-0 after:absolute after:bottom-0 after:right-0 after:border-b-4 after:border-blue-800 hover:after:w-full hover:after:left-0 after:transition-all after:duration-500  after:ease-in-out`}
     >
-      <li className="h-full flex items-center px-8 transition-all text-xl">{item.title}</li>
+      <li className="h-full flex items-center px-4 transition-all text-md">{item.title}</li>
     </motion.a>
   );
 };
@@ -58,7 +58,7 @@ const Navbar = () => {
       </a>
 
       {/* 一般選單 */}
-      <ul className="hidden lg:flex gap-5 text-2xl h-full items-center ">
+      <ul className="hidden lg:flex gap-5 text-xl h-full items-center ">
         {navbarList.map((item) => {
           return <StyleLi key={item.id} item={item} />;
         })}

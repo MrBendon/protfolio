@@ -17,8 +17,8 @@ const Projects = () => {
       >
         {/* 上方文字 */}
         <div className="flex h-[20%] flex-col gap-4 p-4">
-          <p className="xl:text-7xl text-3xl text-white ">作品列表 Project List</p>
-          <p className="xl:text-2xl text-md text-white">
+          <p className="xl:text-5xl text-3xl text-white ">作品列表 Project List</p>
+          <p className="xl:text-xl text-md text-white">
             作品為自學期間，透過實作來練習並熟練所學，部分為完整網站，部分則為小功能實作練習．
           </p>
         </div>

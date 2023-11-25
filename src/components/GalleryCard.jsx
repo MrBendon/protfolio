@@ -8,7 +8,7 @@ const GalleryCard = ({ image, setActiveId }) => {
   }
   return (
     <div
-      className={`lg:min-w-[150px] lg:h-[250px] min-w-[60px] md:h-[160px] h-[100px] relative group hover:-translate-x-1 hover:-translate-y-1 lg:rounded-3xl rounded-md `}
+      className={`lg:min-w-[125px] lg:h-[200px] min-w-[60px] md:h-[160px] h-[100px] relative group hover:-translate-x-1 hover:-translate-y-1 lg:rounded-3xl rounded-md `}
       onClick={() => handleClickImg()}
     >
       <div className="w-full h-[99%]  lg:rounded-3xl rounded-md border-4 lg:border-8 border-black/80 absolute top-[2px] -right-[2px] lg:top-2 lg:-right-1 group-hover:border-[10px] group-hover:h-full group-hover:-right-2"></div>

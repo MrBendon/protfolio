@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import image1 from "../assets/images/galleryimages/1.jpg";
 import image2 from "../assets/images/galleryimages/2.jpg";
 import image3 from "../assets/images/galleryimages/3.jpg";
@@ -32,20 +32,21 @@ const Gallery = () => {
   }
 
   function handleMinus() {
-    const lastImageId = newImagesArray.at(-1).id;
+    const lastImageId = newImagesArray.at(-2).id;
     setActiveId(lastImageId);
   }
+
   //因為目前的照片一定是新陣列中的第一個,透過新的陣列直接找下一個物件的id
   function handlePlus() {
-    const nextimmageId = newImagesArray.at(1).id;
-    setActiveId(nextimmageId);
+    const nextImageId = newImagesArray.at(1).id;
+    setActiveId(nextImageId);
   }
 
   return (
-    <div className="w-full h-screen relative overflow-hidden snap-start " id="gallery">
+    <div className="w-full h-screen relative overflow-hidden snap-start" id="gallery">
       {/* === */}
       {/* 大圖盒子 */}
-      <div className="w-full h-full  relative ">
+      <div className="w-full h-full relative ">
         {images.map((image) => {
           return (
             <div
@@ -61,10 +62,10 @@ const Gallery = () => {
                   image.id === activeId || "hidden"
                 } flex flex-col absolute xl:top-[20%] top-[10%] left-[10%] w-max bg-black/20 xl:p-8 p-4 xl:rounded-3xl rounded-2xl`}
               >
-                <p className="lg:text-8xl text-3xl tracking-wider font-bold animate-showTitle text-white">
+                <p className="lg:text-5xl text-4xl tracking-wider font-bold animate-showTitle text-white">
                   {image.title}
                 </p>
-                <p className="lg:text-3xl text-xl mt-4 font-semibold animate-showDes text-white">
+                <p className="lg:text-xl text-xl mt-4 font-semibold animate-showDes text-white">
                   {image.description}
                 </p>
                 <button className="w-max h-max lg:py-4 lg:px-12 py-2 px-4 bg-white rounded-full mt-12 animate-showButton ">
@@ -85,7 +86,7 @@ const Gallery = () => {
         ref={ref}
       >
         <div
-          className="absolute lg:-left-28 -left-14 lg:top-[50%] top-[47.5%] -translate-y-[50%] -rotate-90 bg-blue-300 lg:w-36 lg:h-16 w-16 h-8 z-20 lg:text-3xl text-xl flex items-center rounded-t-2xl cursor-pointer justify-center"
+          className="absolute lg:-left-28 -left-14 lg:top-[50%] top-[47.5%] -translate-y-[50%] -rotate-90 bg-blue-300 lg:w-36 lg:h-12 w-16 h-8 z-20 lg:text-2xl text-lg flex items-center rounded-t-2xl cursor-pointer justify-center"
           onClick={() => handleClickToggle()}
         >
           {isOpen ? "Close" : "Open"}
@@ -96,15 +97,15 @@ const Gallery = () => {
       </div>
       {/* === */}
       {/* 按鈕盒子 */}
-      <div className="w-max h-max absolute bottom-4 left-[50%] -translate-x-[50%]  flex gap-4  ">
+      <div className="w-max h-max absolute bottom-4 left-[50%] -translate-x-[50%] flex gap-4">
         <button
-          className="lg:w-16 lg:h-16 w-8 h-8 bg-gray-300/50 rounded-full flex items-center justify-center lg:text-4xl text-2xl"
+          className="lg:w-12 lg:h-12 w-8 h-8 bg-gray-300/50 rounded-full flex items-center justify-center lg:text-4xl text-2xl"
           onClick={() => handleMinus()}
         >
           -
         </button>
         <button
-          className="lg:w-16 lg:h-16 w-8 h-8 bg-gray-300/50 rounded-full flex items-center justify-center  lg:text-4xl text-2xl"
+          className="lg:w-12 lg:h-12 w-8 h-8 bg-gray-300/50 rounded-full flex items-center justify-center  lg:text-4xl text-2xl"
           onClick={() => handlePlus()}
         >
           +
