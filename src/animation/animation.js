@@ -15,7 +15,7 @@ export const contactVariants = {
 
 export const cardsVariants = {
   initial: {
-    y: -200,
+    y: -100,
     opacity: 0,
   },
   animate: { y: 0, opacity: 1 },

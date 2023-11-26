@@ -6,7 +6,12 @@ import { homeVariants } from "../animation/animation.js";
 const SectionOne = () => {
   // console.log({ homeVariants });
   return (
-    <motion.div variants={homeVariants} initial={homeVariants.initial} animate={homeVariants.animate}>
+    <motion.div
+      variants={homeVariants}
+      initial={homeVariants.initial}
+      animate={homeVariants.animate}
+      transition={{ duration: 1 }}
+    >
       <div className="w-full h-dvh pt-36 bg-backgroundImage1 bg-cover bg-center snap-start relative px-4">
         {/* <div className="w-[90%] mx-auto flex flex-wrap relative"> */}
         <div className="flex relative">

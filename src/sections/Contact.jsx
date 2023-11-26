@@ -96,7 +96,7 @@ const Contact = () => {
 
       <div className="w-full h-[80%] flex p-8 md:flex-row flex-col md:gap-0 gap-8">
         <form className="md:w-[60%] w-full md:h-full h-max flex flex-col justify-center md:gap-16 gap-8 2xl:text-2xl xl:text-xl text-md">
-          <div className="md:w-[70%] w-full md:h-24 h-16 flex justify-start items-center mx-auto relative ">
+          <div className="md:w-[70%] w-full md:h-20 h-16 flex justify-start items-center mx-auto relative ">
             <input
               type="text"
               className={`${
@@ -118,7 +118,7 @@ const Contact = () => {
               您的稱呼
             </span>
           </div>
-          <div className="md:w-[70%] w-full md:h-24  h-16 flex justify-start items-center mx-auto relative ">
+          <div className="md:w-[70%] w-full md:h-20  h-16 flex justify-start items-center mx-auto relative ">
             <input
               type="email"
               className={`${

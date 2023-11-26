@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <motion.div initial={{ opacity: 0.1, x: 0 }} animate={{ opacity: 1, x: 0 }}>
       <div
-        className="w-full h-dvh bg-gradient-to-br from-gray-900 to-black flex flex-col overflow-hidden snap-start"
+        className="w-full h-screen bg-gradient-to-br from-gray-900 to-black flex flex-col overflow-hidden snap-start"
         id="projects"
       >
         {/* 上方文字 */}
@@ -24,7 +24,7 @@ const Projects = () => {
         </div>
         <div className="w-full h-[80%] flex ">
           {/* 左邊專案列表塊 */}
-          <div className="xl:w-[50%] w-[25%] h-[97%] gap-x-8  gap-y-4 py-2 xl:py-16 xl:px-8 px-0 overflow-auto justify-between my-scrollbar flex flex-col xl:grid xl:grid-cols-2 4xl:grid-cols-3">
+          <div className="xl:w-[50%] w-[25%] h-full gap-x-8 gap-y-4 xl:py-16 xl:px-8 px-0 overflow-auto xl:justify-around my-scrollbar flex flex-col xl:grid xl:grid-cols-2 4xl:grid-cols-3">
             {ProjectsData.map((project, index) => {
               return (
                 <ProjectCard

@@ -70,7 +70,7 @@ const Navbar = () => {
         onClick={() => setIsOpenNav((prev) => !prev)}
         ref={ref}
       >
-        <div className="relative w-12 border-b-4 border-blue-400 after:absolute after:w-full after:-top-2 after:border-b-4 after:border-blue-400 before:absolute before:w-full md:before:top-[10px] before:top-[8px] before:border-b-4 before:border-blue-400 group-hover:after:-top-4 group-hover:before:top-4 after:transition-all before:transition-all"></div>
+        <div className="relative w-12 border-b-4 border-blue-400 after:absolute after:w-full after:-top-2 md:after:-top-[10px] after:border-b-4 after:border-blue-400 before:absolute before:w-full md:before:top-[10px] before:top-[8px] before:border-b-4 before:border-blue-400 group-hover:after:-top-4 group-hover:before:top-4 after:transition-all before:transition-all"></div>
         <div
           className={`${
             isOpenNav ? "flex opacity-100 flex-col bg-white" : " top-1/2 opacity-0 invisible flex-row"
